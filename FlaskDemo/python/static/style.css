@@ -5,11 +5,19 @@
 .backgroundHeader{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 400px;
     background-position: center;
 }
 
 .headerText{
     font-size: 64px;;
     color: white;
+}
+
+.greetingsContent{
+    margin-top: 8em;
+}
+
+.greetingsContent p{
+    font-size: 18px;
 }
