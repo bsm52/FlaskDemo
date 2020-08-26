@@ -5,7 +5,7 @@ app = flask.Flask(__name__, template_folder='templates')
 
 @app.route('/login')
 def index():
-    return render_template('base.html', title='Login')
+    return render_template('base.html', title='Login', homepageApiUrl='/hello?name=Brandon')
 
 
 @app.route('/')

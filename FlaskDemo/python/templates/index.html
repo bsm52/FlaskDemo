@@ -3,30 +3,36 @@
 {% block content %}
 
         <div class="backgroundHeader" style="background-image: url('{{ url_for('static', filename='images/HeaderImage.jpg') }}');">
-            <div class="">
-                <h1 class="roboto headerText">Welcome to Brandon's </h1>
-                <h1 class="roboto headerText" style="font-size: 84px;">Flask Web Application!</h1>
+            <div class="text-center">
+                <h1 class="roboto headerText font-weight-bold" style="padding-top: 100px;">Welcome to Brandon's </h1>
+                <h1 class="roboto headerText font-weight-bold" style="font-size: 84px;">Flask Web Application!</h1>
             </div>
         </div>
 
         <!-- Some Front Page Content -->
 
-        <div class="greetingsContent container">
+        <div class="jumbotron text-center">
+            <h3 class="roboto">Hey everyone! Welcome to my Flask Application.</h3>
+                <p class="roboto">
+                   <br><br>
+                    I initially started working with Flask when I was trying to learn how to create an API with Python. <br><br>
+                    That later led me to find out all the things you can do with Flask, and thus, here is a demo application. With this app, there are API calls you can make, 
+                    add a message for others to see for the week (please make it appropriate) and other cool things I will add in the future! Thanks for stopping by :)
+                </p>
+        </div>
+
+        <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <h2 class="roboto">Here are the Technologies Used!</h2>
+                <div class="col text-center">
+                    <h2 class="notosansjp" style="font-size: 46px;">Here are the Technologies Used!</h2>
                     <div>
                         <img height="350px" width="390px" src="{{ url_for('static', filename='images/flask.png') }}" alt="">
                     </div>
+                    <div class="" style="margin-top: 2em;">
+                        <img height="350px" width="350px" src="{{ url_for('static', filename='images/pythonlogo.png') }}" alt="">
+                    </div>
                 </div>
-                <div class="col">
-                    <p class="roboto">
-                        Hey everyone! Welcome to my Flask Application. <br><br>
-                        I initially started working with Flask when I was trying to learn how to create an API with Python. <br><br>
-                        That later led me to find out all the things you can do with Flask, and thus, here is a demo application. With this app, there are API calls you can make, 
-                        add a message for others to see for the week (please make it appropriate) and other cool things I will add in the future! Thanks for stopping by :)
-                    </p>
-                </div>
+                
             </div>
 
         </div>
